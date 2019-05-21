@@ -1,7 +1,9 @@
+#pragma once
 #include "FBullCowGame.h"
 #include <map>
 #include <stdlib.h>
 #include <time.h>
+
 #define Tmap std::map
 
 

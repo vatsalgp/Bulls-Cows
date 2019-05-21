@@ -1,6 +1,5 @@
+#pragma once
 #include <iostream>
-#include <string>
-#include <stdlib.h>
 #include "FBullCowGame.h"
 
 using FText = std::string;
