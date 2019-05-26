@@ -65,7 +65,7 @@ void PlayGame() {
 		std::cout << "Cows = "<< BullCowCount.Cows << std::endl;
 		std::cout << std::endl;
 	}
-	PrintGameSummary();
+	BCGame.PrintGameSummary();
 
 	return;
 }
@@ -117,12 +117,4 @@ FText CheckGuessError() {
 	return Guess;
 }
 
-void PrintGameSummary() {
 
-	if (BCGame.IsGameWon()) {
-		std::cout << "You Win." << std::endl;
-	}
-	else {
-		std::cout << "You Lost." << std::endl;
-	}
-}

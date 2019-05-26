@@ -30,7 +30,7 @@ public :
 	int32 GetHiddenWordLength() const;
 	FBullCowCount SubmitValidGuess(FString);
 	void Reset();
-
+	void PrintGameSummary();
 
 private :
 	int32 MyCurrentTry;

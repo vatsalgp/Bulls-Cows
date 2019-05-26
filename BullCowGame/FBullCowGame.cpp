@@ -1,5 +1,6 @@
 #pragma once
 #include "FBullCowGame.h"
+#include<iostream>
 #include <map>
 #include <stdlib.h>
 #include <time.h>
@@ -14,7 +15,7 @@ int32 FBullCowGame::GetHiddenWordLength() const{ return MyHiddenWord.length(); }
 bool FBullCowGame::IsGameWon() const { return bGameIsWon; }
 
 int32 FBullCowGame::GetMaxTries() const { 
-	return 2 * MyHiddenWord.length() - 2;
+	return 2 * MyHiddenWord.length();
 }
 
 FBullCowGame::FBullCowGame() {
@@ -114,6 +115,16 @@ bool FBullCowGame::isIsogram(FString Guess) {
 	}
 	
 	return true;
+}
+
+void FBullCowGame::PrintGameSummary() {
+
+	if (IsGameWon()) {
+		std::cout << "You Win." << std::endl;
+	}
+	else {
+		std::cout << "You Lost. The word was " << MyHiddenWord  << "." << std::endl;
+	}
 }
 
 FString FBullCowGame::GetHiddenWord() {
