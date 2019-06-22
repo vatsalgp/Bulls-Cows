@@ -1,6 +1,6 @@
 #pragma once
 #include "FBullCowGame.h"
-#include<iostream>
+#include <iostream>
 #include <map>
 #include <stdlib.h>
 #include <time.h>
